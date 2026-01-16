@@ -91,6 +91,7 @@ OCRmyPDF
 yt-dlp
 fedora-hyprland
 Hitomi Downloader
+spotdl
 
 # Custom Setups
 ## Local Chatbot
