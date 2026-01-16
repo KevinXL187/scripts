@@ -1,3 +1,4 @@
 system wide environment (ollama_model location) - /etc/environment
 startup scripts                                 - /opt/scripts
 service files                                   - /etc/systemd/system/<name>.service
+drive files                                     - /etc/fstab
