@@ -5,15 +5,13 @@ COMPOSE_DIR="/mnt/linux_data/Local Chatbot/open-webui/"
 LOG_DIR="/var/log/chatbot-docker"
 LOG_FILE="${LOG_DIR}/docker_compose_$(date +'%Y-%m-%d').log"
 
+mkdir -p "$LOG_DIR"
+
 # Function to wait until the mount becomes available
 wait_for_mount() {
     echo "Waiting for ${COMPOSE_DIR} to become available..." >> "$LOG_FILE"
-    while [ ! -d "$COMPOSE_DIR" ]; do
-        sleep 2
-    done
 
-    # Additional check: ensure filesystem is actually mounted
-    while ! mountpoint -q "$COMPOSE_DIR"; do
+    while [ ! -d "$COMPOSE_DIR" ]; do
         sleep 2
     done
 

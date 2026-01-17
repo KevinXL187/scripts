@@ -1,0 +1,16 @@
+# /etc/systemd/system/chatbot.service
+[Unit]
+Description=Local Chatbot
+After=ollama.service
+
+[Service]
+Type=oneshot
+User=xinghai
+Group=xinghai
+RemainAfterExit=yes
+
+ExecStart=/opt/scripts/chatbot_startup.sh
+ExecStop=/opt/scripts/chatbot_close.sh
+
+[Install]
+WantedBy=multi-user.target
