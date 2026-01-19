@@ -1,7 +1,7 @@
 
 #
 # /etc/fstab
-# Created by anaconda on Tue Nov 18 00:16:45 2025
+# Created by anaconda on Fri Jan 16 19:14:50 2026
 #
 # Accessible filesystems, by reference, are maintained under '/dev/disk/'.
 # See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
@@ -9,9 +9,13 @@
 # After editing this file, run 'systemctl daemon-reload' to update systemd
 # units generated from this file.
 #
-UUID=1bd8f91a-6cce-491a-9af8-4380dc1ed195   /                 btrfs   defaults                     0 0 
-UUID=487bdd81-1db1-4ce6-9712-0a2d04ddf06d   /boot             ext4    defaults                     1 2 
-UUID=61F6-C2D0                              /boot/efi         vfat    umask=0077,shortname=winnt   0 2 
-UUID=28acf16b-d52d-49f6-937b-9781e8bc4419   /home             btrfs   subvolid=5                   0 0 
+UUID=76327b0e-5bec-4fa8-b9ed-6e738b186a80 /                       btrfs   defaults        0 0
+UUID=1f2ba79f-404f-4707-90fc-264fd509eef1 /boot                   ext4    defaults        1 2
+UUID=D657-072D          /boot/efi               vfat    umask=0077,shortname=winnt 0 2
+UUID=ab4d4b78-0ad2-43a7-9f9f-961e1933d2ce /home                   btrfs   defaults        0 0
+UUID=a1d47449-1400-4ef6-82a9-b86d4a7537fd none                    swap    defaults        0 0
 UUID=86A9-E648                              /mnt/shared       exfat   defaults,nofail,uid=1000,gid=1000,umask=000 0 0
 UUID=de1ea0e4-8a9f-44a9-ac93-ab74876cdf9a   /mnt/linux_data   ext4    defaults,nofail              0 0
+
+UUID=9C41-04AD                  /mnt/elements       exfat           defaults,nofail       0 0
+UUID=FE360B1A360AD395 /mnt/windows          ntfs-3g     defaults,nofail,uid=1000,gid=1000,umask=022  0  0
