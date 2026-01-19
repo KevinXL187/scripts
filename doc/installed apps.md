@@ -2,19 +2,27 @@
 Joplin
 
 # Snap
-Hakuneko-electron
+Hakuneko-electron (currently not working)
 
 # Flatpak
 Rnote
-Spotify
 Planify
 Gear Lever
 Anki
+Pgadmin 4
+OpenTabletDriver
+
+Spotify (x)
 
 # Internet Shortcut
 Draw.io
 Spotify
 
+# Manual (.rpm file)
+RStudio
+Harmonoid
+
+Davinci Resolve ([diffcult](https://gist.github.com/tapscodes/21b934274ef06f180a8807153f425de1))
 
 # DNF
 
@@ -23,8 +31,7 @@ Kitty
 zsh
 Wireshark
 btop++
-Fcitx 5 [English, Pinyin, Hangul Mozc]
-OpenTabletDriver
+Fcitx 5 [English, Pinyin, Hangul, Mozc]
 Oracle VirtualBox
 OpenRGB
 
@@ -34,18 +41,18 @@ LibreWolf [2 Profiles]
 KDE Connect
 Mullvad VPN
 Nicotine+ (Soulseek Client)
-qBittorrent
+qBittorrent (needs to be config)
 TeXstudio
-scrcpy
+scrcpy (needs testing)
+OCRmyPDF
 
 ## Gaming Related
 Steam
 Wine
 Bottles
-Heoric Game Launcher
+Heoric Game Launcher (flatpak)
 
 ## Media Related
-Davinci Resolve
 Blender
 Darktable
 GIMP
@@ -55,31 +62,32 @@ RawTherapee
 Audacity
 Avidemux
 HandBrake
-Harmonoid
 LMMS
 MusicBrainz Picard
 OBS Studio
-mpv
 
 ## Programming Related
 Docker (custom config)
 Vscodium
-Pgadmin 4 (?)
+postgreSQL
 
 ### Nvidia
 Nvidia Cuda
+Nvidia Cuda Toolkit
 
 ### Java
 OpenJDK 21
 
 ### C
 gcc
+cmake
+cmake-gui
 
 ### R
 R
-RStudio
 
 ### Python
+pipx
 pyenv
 Python
 
@@ -87,11 +95,10 @@ Python
 npm
 
 # Github Projects
-OCRmyPDF
 yt-dlp
 fedora-hyprland
 Hitomi Downloader
-spotdl
+spotdl (via pipx)
 
 # Custom Setups
 ## Local Chatbot
