@@ -33,16 +33,16 @@ GDK_BACKEND=$BACKEND yad \
 " enter" "Terminal" "(kitty)" \
 " SHIFT enter" "DropDown Terminal" " Q to close" \
 " B" "Launch Browser" "(Default browser)" \
-" E" "Open File Manager" "(Thunar)" \
+" E" "Open File Manager" "(Dolphin)" \
 "" "" "" \
-" A" "Desktop Overview" "(AGS - if opted to install)" \
+" A" "Desktop Overview" "(AGS)" \
 " D" "Application Launcher" "(rofi-wayland)" \
 " SHIFT N" "Launch Notification Panel" "swaync Notification Center" \
 " ALT L" "Toggle Dwindle | Master Layout" "Hyprland Layout" \
 " Alt V" "Clipboard Manager" "(cliphist)" \
 " ALT E" "Rofi Emoticons" "Emoticon" \
 "" "" "" \
-" SHIFT K" "Searchable Keybinds" "(Search all Keybinds via rofi)" \
+" SHIFT K" "Searchable Keybinds" "(Search all Keybinds)" \
 " SHIFT E" "KooL Hyprland Settings Menu" "" \
 " ALT R" "Reload Waybar swaync Rofi" "CHECK NOTIFICATION FIRST!!!" \
 "" "" "" \
