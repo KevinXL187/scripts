@@ -11,6 +11,8 @@ Gear Lever
 Anki
 Pgadmin 4
 OpenTabletDriver
+Flatseal
+Prism launcher
 
 Spotify (x)
 
