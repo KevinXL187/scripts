@@ -63,6 +63,8 @@ https://docs.fedoraproject.org/en-US/quick-docs/
         set as default in kde plasma ->
             System Settings -> Default Appllications -> muisc/vido player
 
+        *install additoanl media codec -> sudo dnf install @multimedia
+
     c. Set Other defualt applications
         set kitty as terminal emulator
         set dolphin as file manager
@@ -134,4 +136,4 @@ https://docs.fedoraproject.org/en-US/quick-docs/
 11. Remove overlapping and useless Programs
 
 12. Complete Gaming Setup
-        Incomplete (Steam disk write error on exfat external ssd)
+    Incomplete (Steam disk write error on exfat external ssd)
