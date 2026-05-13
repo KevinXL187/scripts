@@ -1,0 +1,36 @@
+#/open-webui/docker-compose.yaml
+services:
+  ollama:
+    image: ollama/ollama:${OLLAMA_DOCKER_TAG}
+    container_name: ollama
+    volumes:
+      - "/mnt/linux_data/Local Chatbot/models/ollama_models:/root/.ollama:Z"
+    ports:
+      - "11435:11434"
+    tty: true
+    restart: no
+    runtime: nvidia
+    environment:
+        - NVIDIA_VISIBLE_DEVICES=all
+
+  open-webui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        OLLAMA_BASE_URL: 'http://ollama:11434'
+    #image: ghcr.io/open-webui/open-webui:${WEBUI_DOCKER_TAG}
+    container_name: open-webui
+    depends_on:
+      - ollama
+    ports:
+      - "${OPEN_WEBUI_PORT}:8080"
+    volumes:
+      - "/mnt/linux_data/Local Chatbot/open-webui_data:/app/backend/data:Z"
+    environment:
+      - 'OLLAMA_BASE_URL=http://ollama:11434'
+      - 'WEBUI_SECRET_KEY=generatedkeyhere'
+    restart: no
+
+volumes:
+  open-webui: {}

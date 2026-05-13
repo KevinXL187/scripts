@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#/opt/scripts/chatbot_startup.sh
 
 COMPOSE_DIR="/mnt/linux_data/Local Chatbot/open-webui/"
 LOG_DIR="/var/log/chatbot-docker"
